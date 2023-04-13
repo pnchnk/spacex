@@ -1,0 +1,230 @@
+//homepage
+.homeSection {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  height: 740px;
+  background-image: url(../assets/img/pexels-spacex-58605611.png);
+  background-attachment: fixed;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+
+  .exploreTours {
+    color: white;
+    text-shadow: -0 -1px 0 #000000, 0 -1px 0 #000000, -0 1px 0 #000000,
+      0 1px 0 #000000, -1px -0 0 #000000, 1px -0 0 #000000, -1px 0 0 #000000,
+      1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000,
+      -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000,
+      1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    z-index: 1;
+    font-size: 32px;
+    font-family: "Lato";
+    font-weight: 300;
+    cursor: pointer;
+  }
+}
+
+nav {
+  ul {
+    color: white;
+    display: inline-flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+
+    li {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.homeSection:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.homeTitle {
+  flex-direction: column;
+  color: white;
+  z-index: 1;
+
+  h2 {
+    font-size: 58px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+    transform: scaleX(1.6);
+  }
+
+  h3 {
+    font-size: 310px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+    transform: scaleX(1.8);
+  }
+}
+
+.flightsSection {
+  padding-bottom: 80px;
+
+  .title {
+    font-size: 56px;
+    transform: scaleY(0.5);
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+}
+
+//favorite page 
+
+.favSection {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 80px;
+    height: 430px;
+    background-image: url(../assets/img/fav.png);
+    background-attachment: fixed;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+    h2 {
+      font-size: 58px;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin: 0;
+      text-align: center;
+      transform: scaleX(1.6);
+      color: white;
+    }
+  
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  
+  .favCardsSection {
+    padding-top: 80px;
+  
+    p {
+      color: rgba(85, 107, 132, 1);
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      text-align: end;
+    }
+  
+    .favCardsRow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+  
+      .favCard {
+        width: calc(33% - 25px);
+        border: 1px solid #d3eaff;
+        display: flex !important;
+        flex-direction: column;
+        overflow: hidden;
+        flex-wrap: wrap;
+        min-height: 850px;
+        justify-content: space-between;
+  
+        .favCardImg {
+          height: 300px;
+          width: 100%;
+          background-size: contain;
+        }
+  
+        .favCardInfo {
+          padding: 30px;
+  
+          h3 {
+            font-weight: 700;
+            transform: scaleY(0.8);
+            font-size: 26px;
+            text-align: center;
+          }
+  
+          p {
+            color: rgba(85, 107, 132, 1);
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            text-align: center;
+            transform: scaleY(0.9);
+          }
+        }
+  
+        .favCardAction {
+          padding: 30px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+  
+          .buyButton {
+            background-color: rgba(211, 234, 255, 1);
+            font-size: 24px;
+            transform: scaleY(0.8);
+            width: 80%;
+            height: calc(53px/0.8);
+            border: none;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 12px 0;
+            cursor: pointer;
+      
+            &:hover {
+              background-color: rgb(190, 221, 250);
+              transition: ease 0.2s;
+            }
+          }
+      
+          .favButton {
+            width: 53px;
+            height: 53px;
+            border: none;
+            cursor: pointer;
+            background-color: rgba(236, 236, 236, 1);
+      
+            &:hover {
+              background-color: rgb(200, 200, 200);
+              transition: ease 0.2s;
+            }
+          }
+        }
+      }
+    }
+  }
+  

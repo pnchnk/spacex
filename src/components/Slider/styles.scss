@@ -1,0 +1,140 @@
+.card {
+    width: 85% !important;
+    border: 1px solid #d3eaff;
+    display: flex !important;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: wrap;
+    min-height: 850px;
+    justify-content: space-between;
+  
+    .cardImg {
+      height: 300px;
+      width: 100%;
+      background-size: contain;
+    }
+  
+    .cardInfo {
+      padding: 30px;
+  
+      h3 {
+        font-weight: 700;
+        transform: scaleY(0.8);
+        font-size: 26px;
+        text-align: center;
+      }
+  
+      p {
+        color: rgba(85, 107, 132, 1);
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        text-align: center;
+        transform: scaleY(0.9);
+      }
+    }
+  
+    .cardAction {
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .buyButton {
+        background-color: rgba(211, 234, 255, 1);
+        font-size: 24px;
+        transform: scaleY(0.8);
+        width: 80%;
+        height: calc(53px/0.8);
+        border: none;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 12px 0;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: rgb(190, 221, 250);
+          transition: ease 0.2s;
+        }
+      }
+  
+      .favButton {
+        width: 53px;
+        height: 53px;
+        border: none;
+        cursor: pointer;
+        background-color: rgba(236, 236, 236, 1);
+  
+        &:hover {
+          background-color: rgb(200, 200, 200);
+          transition: ease 0.2s;
+        }
+      }
+    }
+  }
+
+  .slick-dots {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+    position: absolute;
+    bottom: -60px;
+  
+    list-style-type: none !important;
+  
+    li {
+      margin: 0 0.25rem !important;
+    }
+  
+    button {
+      display: block !important;
+      width: 1rem !important;
+      height: 1rem !important;
+      padding: 0 !important;
+  
+      border: 1px solid black !important;
+      border-radius: 100% !important;
+      background-color: white !important;
+  
+      text-indent: -9999px !important;
+    }
+  
+    li.slick-active button {
+      background-color: black !important;
+    }
+  }
+
+  .slick-dots {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+    position: absolute;
+    bottom: -60px;
+  
+    list-style-type: none !important;
+  
+    li {
+      margin: 0 0.25rem !important;
+    }
+  
+    button {
+      display: block !important;
+      width: 1rem !important;
+      height: 1rem !important;
+      padding: 0 !important;
+  
+      border: 1px solid black !important;
+      border-radius: 100% !important;
+      background-color: white !important;
+  
+      text-indent: -9999px !important;
+    }
+  
+    li.slick-active button {
+      background-color: black !important;
+    }
+  }
