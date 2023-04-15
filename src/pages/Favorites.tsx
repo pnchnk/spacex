@@ -41,7 +41,7 @@ function Favorites() {
       </section>
       <div className="favCardsSection">
         <div className="container">
-          {favoriteFlights.length < 1 ? (
+          {!favoriteFlights.length ? (
             <p style={{ textAlign: "center" }}>
               Your favorite page is empty. Go to{" "}
               <Link
